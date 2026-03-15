@@ -7,7 +7,7 @@ The initial version of this app, is written using javascript, yes, not exactly a
 The code could use a bit of cleanup and restructuring, but it works, so may get to this one day.
 
 ## Example Session
-
+Note: Has color and looks better in terminal.
 ```
 $ node maze.js
 
@@ -85,5 +85,4 @@ Ctrl-D or Bye  Exit
 Command: bye ... existing ...
 $
 ```
-
 to be continued
