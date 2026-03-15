@@ -8,6 +8,7 @@ The code could use a bit of cleanup and restructuring, but it works, so may get 
 
 ## Example Session
 
+```
 $ node maze.js\
 \
 Welcome to the Maze ...\
@@ -83,5 +84,6 @@ Ctrl-D or Bye  Exit\
 >>> bye\
 Command: bye ... existing ...\
 $\
+```
 
 to be continued
