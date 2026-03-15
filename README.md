@@ -6,82 +6,82 @@ The initial version of this app, is written using javascript, yes, not exactly a
 
 The code could use a bit of cleanup and restructuring, but it works, so may get to this one day.
 
-Following is an example session.
+## Example Session
 
-$ node maze.js
-
-Welcome to the Maze ...
---- ctrl-d or "bye" to exit ---
->>> help
-style s      Set style of maze map, 0, 1, 2
-size x y     Set size of maze, params: x y
-ms t         Gen speed in millisecs def 10
-color c b    Color 0 - 7, bright 0 - 1
-colors       Show all available colors
-gen          Gen maze using my algorithm
-gen2         Gen maze using other algorithm
-Up Arrow     Move forward, also u or f enter
-Down Arrow   Rotate 180 or backup, also d or b enter
-Left Arrow   Rotate left, also l enter
-Right Arrow  Rotatae right, also r enter
-Page Up      Show 3d maze view, also 3d enter
-Page Down    Show 2d maze map, also 2d enter
-dt           Toggle the Down Arrow between rot or backup
-clrcmd cmd   Clear auto repeat command
-
-Ctrl-D or Bye  Exit
->>> gen
-
- ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
- ┃ >     ┃       ┃       ┃       ┃       ┃  <
- ┃   ╻   ┃   ╻   ╹   ╺━━━┫   ╻   ┃   ╻   ┃
- ┃   ┃   ┃   ┃           ┃   ┃   ┃   ┃   ┃  2
- ┃   ┃   ┗━━━╋━━━┳━━━╸   ┃   ┃   ┣━━━┛   ┃
- ┃   ┃       ┃   ┃       ┃   ┃   ┃       ┃  3
- ┃   ┗━━━┓   ╹   ┃   ╺━━━┻━━━┫   ╹   ╺━━━┫
- ┃       ┃       ┃           ┃           ┃  4
- ┃   ┏━━━┻━━━╸   ┃   ┏━━━╸   ┗━━━━━━━┓   ┃
- ┃   ┃           ┃   ┃               ┃   ┃  5
- ┣━━━┛   ╻   ╻   ┗━━━┛   ┏━━━━━━━╸   ┃   ┃
- ┃       ┃   ┃           ┃           ┃   ┃  6
- ┃   ┏━━━┻━━━┻━━━┳━━━━━━━┻━━━┓   ╻   ┃   ┃
- ┃   ┃           ┃           ┃   ┃   ┃   ┃  7
- ┃   ╹   ╺━━━┳━━━┫   ╺━━━┓   ┃   ┃   ╹   ┃
- ┃           ┃   ┃       ┃   ┃   ┃       ┃  8
- ┃   ╺━━━┓   ╹   ┃   ╻   ┗━━━┫   ┣━━━━━━━┫
- ┃       ┃       ┃   ┃       ┃   ┃       ┃  9
- ┣━━━╸   ┗━━━━━━━┻━━━┻━━━╸   ┃   ╹   ╻   ┃
- ┃                           ┃       ┃   ┃ 10
- ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━┻━━━┛
-   ^   2   3   4   5   6   7   8   9  10
->>> 3d
-
-▀▄                                             █
-  ▀▄                                           █
-    ▀▄                                         █
-      ▀▄                                       █
-        ▀▄                            ▄▄▄▄▄▄▄▄▄█
-          ▀▄                          █        █
-            ▀▄                        █        █
-              ▀▄                ▄▄▄▄▄▄█        █
-                ▀▄            ▄▀█     █        █
-                  ▀▄        ▄▀  █     █        █
-                    ▀▄    ▄▀    █     █        █
-                      █▀▀█      █     █        █
-                      █▄▄█      █     █        █
-                    ▄▀    ▀▄    █     █        █
-                  ▄▀        ▀▄  █     █        █
-                ▄▀            ▀▄█     █        █
-              ▄▀                ▀▀▀▀▀▀█        █
-            ▄▀                        █        █
-          ▄▀                          █        █
-        ▄▀                            ▀▀▀▀▀▀▀▀▀█
-      ▄▀                                       █
-    ▄▀                                         █
-  ▄▀                                           █
-▄▀                                             █
->>> bye
-Command: bye ... existing ...
-$
+$ node maze.js\
+\
+Welcome to the Maze ...\
+--- ctrl-d or "bye" to exit ---\
+>>> help\
+style s      Set style of maze map, 0, 1, 2\
+size x y     Set size of maze, params: x y\
+ms t         Gen speed in millisecs def 10\
+color c b    Color 0 - 7, bright 0 - 1\
+colors       Show all available colors\
+gen          Gen maze using my algorithm\
+gen2         Gen maze using other algorithm\
+Up Arrow     Move forward, also u or f enter\
+Down Arrow   Rotate 180 or backup, also d or b enter\
+Left Arrow   Rotate left, also l enter\
+Right Arrow  Rotatae right, also r enter\
+Page Up      Show 3d maze view, also 3d enter\
+Page Down    Show 2d maze map, also 2d enter\
+dt           Toggle the Down Arrow between rot or backup\
+clrcmd cmd   Clear auto repeat command\
+\
+Ctrl-D or Bye  Exit\
+>>> gen\
+\
+ ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓\
+ ┃ >     ┃       ┃       ┃       ┃       ┃  <\
+ ┃   ╻   ┃   ╻   ╹   ╺━━━┫   ╻   ┃   ╻   ┃\
+ ┃   ┃   ┃   ┃           ┃   ┃   ┃   ┃   ┃  2\
+ ┃   ┃   ┗━━━╋━━━┳━━━╸   ┃   ┃   ┣━━━┛   ┃\
+ ┃   ┃       ┃   ┃       ┃   ┃   ┃       ┃  3\
+ ┃   ┗━━━┓   ╹   ┃   ╺━━━┻━━━┫   ╹   ╺━━━┫\
+ ┃       ┃       ┃           ┃           ┃  4\
+ ┃   ┏━━━┻━━━╸   ┃   ┏━━━╸   ┗━━━━━━━┓   ┃\
+ ┃   ┃           ┃   ┃               ┃   ┃  5\
+ ┣━━━┛   ╻   ╻   ┗━━━┛   ┏━━━━━━━╸   ┃   ┃\
+ ┃       ┃   ┃           ┃           ┃   ┃  6\
+ ┃   ┏━━━┻━━━┻━━━┳━━━━━━━┻━━━┓   ╻   ┃   ┃\
+ ┃   ┃           ┃           ┃   ┃   ┃   ┃  7\
+ ┃   ╹   ╺━━━┳━━━┫   ╺━━━┓   ┃   ┃   ╹   ┃\
+ ┃           ┃   ┃       ┃   ┃   ┃       ┃  8\
+ ┃   ╺━━━┓   ╹   ┃   ╻   ┗━━━┫   ┣━━━━━━━┫\
+ ┃       ┃       ┃   ┃       ┃   ┃       ┃  9\
+ ┣━━━╸   ┗━━━━━━━┻━━━┻━━━╸   ┃   ╹   ╻   ┃\
+ ┃                           ┃       ┃   ┃ 10\
+ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━┻━━━┛\
+   ^   2   3   4   5   6   7   8   9  10\
+>>> 3d\
+\
+▀▄                                             █\
+  ▀▄                                           █\
+    ▀▄                                         █\
+      ▀▄                                       █\
+        ▀▄                            ▄▄▄▄▄▄▄▄▄█\
+          ▀▄                          █        █\
+            ▀▄                        █        █\
+              ▀▄                ▄▄▄▄▄▄█        █\
+                ▀▄            ▄▀█     █        █\
+                  ▀▄        ▄▀  █     █        █\
+                    ▀▄    ▄▀    █     █        █\
+                      █▀▀█      █     █        █\
+                      █▄▄█      █     █        █\
+                    ▄▀    ▀▄    █     █        █\
+                  ▄▀        ▀▄  █     █        █\
+                ▄▀            ▀▄█     █        █\
+              ▄▀                ▀▀▀▀▀▀█        █\
+            ▄▀                        █        █\
+          ▄▀                          █        █\
+        ▄▀                            ▀▀▀▀▀▀▀▀▀█\
+      ▄▀                                       █\
+    ▄▀                                         █\
+  ▄▀                                           █\
+▄▀                                             █\
+>>> bye\
+Command: bye ... existing ...\
+$\
 
 to be continued
